@@ -1,3 +1,28 @@
+@import '../normalize.style';
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
 .nav{
    
+}
+.header{
+    font-size: 22px;
+    text-align: center;
+    color:$white;
+    background-color: $black;
+}
+.navigation{
+
+}
+.menu{
+
+}
+.controls{
+
+}
+.main_menu_wrapper{
+
+}
+.main_menu{
+
 }

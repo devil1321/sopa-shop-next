@@ -1,0 +1,90 @@
+@import './normalize.style';
+@import './fonts.style';
+@import './variables.style';
+@import './mixins.style';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.h1{
+    font-family:$f-roboto;
+    font-size:72px;
+    line-height: 80px;
+}
+.h2{
+    font-family:$f-roboto;
+    font-size: 66px;
+    line-height: 74px;
+}
+.h3{
+    font-family:$f-roboto;
+    font-size: 56px;
+    line-height: 64px;
+}
+.h4{
+    font-family:$f-roboto;
+    font-size: 48px;
+    line-height: 56px;
+}
+.h5{
+    font-family:$f-roboto;
+    font-size: 40px;
+    line-height: 46px;
+}
+.h6{
+    font-family:$f-roboto;
+    font-size: 36px;
+    line-height: 40px;
+}
+.h7{
+    font-family:$f-roboto;
+    font-size: 28px;
+    line-height: 32px;
+}
+.h8{
+    font-family:$f-roboto;
+    font-size: 24px;
+    line-height: 28px;
+}
+.p1{
+    font-family: $f-poppins;
+    font-size: 20px;
+    line-height: 24px;
+}
+.p2{
+    font-family: $f-poppins;
+    font-size: 18px;
+    line-height: 22px;
+}
+.p3{
+    font-family: $f-poppins;
+    font-size: 16px;
+    line-height: 20px;
+}
+.p4{
+    font-family: $f-poppins;
+    font-size: 14px;
+    line-height: 18px;
+}
+.p5{
+    font-family: $f-poppins;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.u1{
+    font-family: $f-poppins;
+    font-size: 16px;
+    line-height: 22px;
+}
+.u2{
+    font-family: $f-poppins;
+    font-size: 14px;
+    line-height: 18px;
+}
+.u3{
+    font-family: $f-poppins;
+    font-size: 12px;
+    line-height: 16px;
+}
