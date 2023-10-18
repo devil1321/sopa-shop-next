@@ -1,0 +1,25 @@
+@mixin flex($flow,$jc,$ai,$fw){
+    display: flex;
+    @if($flow){
+        flex-direction: $flow;
+    }
+    @if($jc){
+        justify-content: $jc;
+    }
+    @if($ai){
+        align-items: $ai;
+    }
+    @if($fw){
+        flex-wrap: $fw;
+    }
+}
+
+@mixin normal-button-white{
+    margin:10px 0px;
+    width: 150px;
+    padding:10px 20px;
+    background-color: $white;
+    border-radius: 25px;
+    border:2px solid $black;
+    font-weight: bold;
+}

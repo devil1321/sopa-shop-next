@@ -2,8 +2,19 @@
 @import '../fonts.style';
 @import '../variables.style';
 @import '../mixins.style';
-.nav{
-   
+
+@keyframes comesIn {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.nav_inner_wrapper{
+    padding:0px 135px;    
 }
 .header{
     font-size: 22px;
@@ -12,17 +23,54 @@
     background-color: $black;
 }
 .navigation{
-
+    @include flex(row,space-between,center,null);
+}
+.logo{
+    width:10%
 }
 .menu{
-
+    padding: 0px 180px;
+    width: 70%;
+    @include flex(row,space-between,center,null);
+    a{
+        text-decoration: none;
+        color:$black;
+    }
+    a:last-of-type{
+        box-sizing: border-box;
+        padding:5px 15px;
+        border-radius: 25px;
+        color:$yellowish-green;
+        border:1px solid $yellowish-green;
+    }
 }
 .controls{
-
+    width: 20%;
+    @include flex(row,space-between,center,null);
 }
 .main_menu_wrapper{
-
+    margin:0px auto;
+    width: 560px;
+    animation: comesIn 0.3s ease-in-out forwards;
+    p{
+        font-weight: bold;
+    }
+    a,p{
+        display: block;
+        margin:10px 0px;
+        text-align: center;
+    }
 }
 .main_menu{
-
+    @include flex(row,space-between,center,null);
+    
+}
+.item{
+    text-decoration: none;
+    p{
+        color:$black;
+    }
+    button{
+        @include normal-button-white();
+    }
 }
