@@ -15,6 +15,7 @@
 }
 
 @mixin normal-button-white{
+    cursor: pointer;
     margin:10px 0px;
     width: 150px;
     padding:10px 20px;

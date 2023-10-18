@@ -17,7 +17,7 @@
     padding:0px 135px;    
 }
 .header{
-    font-size: 22px;
+    padding: 5px 0px;    
     text-align: center;
     color:$white;
     background-color: $black;
@@ -32,9 +32,8 @@
     padding: 0px 180px;
     width: 70%;
     @include flex(row,space-between,center,null);
-    a{
-        text-decoration: none;
-        color:$black;
+    a:hover{
+        text-decoration: underline;
     }
     a:last-of-type{
         box-sizing: border-box;
@@ -60,10 +59,17 @@
         margin:10px 0px;
         text-align: center;
     }
+    a{
+        color:$dodger-blue;
+    }
+    button{
+        @include normal-button-white();
+        display: block;
+        margin:0px auto;
+    }
 }
 .main_menu{
     @include flex(row,space-between,center,null);
-    
 }
 .item{
     text-decoration: none;
@@ -72,5 +78,7 @@
     }
     button{
         @include normal-button-white();
+        display: block;
+        margin:0px auto;
     }
 }

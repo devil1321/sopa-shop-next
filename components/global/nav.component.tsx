@@ -83,18 +83,18 @@ const Nav = () => {
 
   return (
     <div className={styles.nav}>
-      <div className={styles.header}>Free US shipping on order $80+</div>
+      <div className={`${styles.header} p3`}>Free US shipping on order $80+</div>
       <div className={styles.nav_inner_wrapper}>
         <div className={styles.navigation}>
           <div className={styles.logo}>
             <img src="/assets/logos/sopa-logo-black.png" alt="logo" />
           </div>
           <div className={styles.menu}> 
-            <Link onClick={()=>handleCategory('men')} className='u1' href="#">Men</Link>
-            <Link onClick={()=>handleCategory('woman')} className='u1' href="#">Woman</Link>
-            <Link onClick={()=>handleCategory('accessories')} className='u1' href="#">Accessories</Link>
-            <Link className='u1' href="/about">About</Link>
-            <Link className='u1' href="/quiz">Some Finder Quiz</Link>
+            <Link onClick={()=>handleCategory('men')} className='p4' href="#">Men</Link>
+            <Link onClick={()=>handleCategory('woman')} className='p4' href="#">Woman</Link>
+            <Link onClick={()=>handleCategory('accessories')} className='p4' href="#">Accessories</Link>
+            <Link className='p4' href="/about">About</Link>
+            <Link className='p4' href="/quiz">Some Finder Quiz</Link>
           </div>
           <div className={styles.controls}>
             <Link href="/help">Support</Link>
@@ -108,7 +108,8 @@ const Nav = () => {
               {menuItems[index].map((i:ItemState) => <Item key={i.id} item={i} />)}
             </div>
             <p className='p4'>Not Sure?</p>
-            <Link href="/quiz">Take the Shoe Finder Quiz</Link>
+            <Link className='u3' href="/quiz">Take the Shoe Finder Quiz</Link>
+            <button onClick={()=>setIsMenu(false)}>Close</button>
           </div>}
       </div>
     </div>
