@@ -41,6 +41,11 @@
         border-radius: 25px;
         color:$yellowish-green;
         border:1px solid $yellowish-green;
+        &:hover{
+            color:$white;
+            background-color: $yellowish-green;
+            text-decoration: none;
+        }
     }
 }
 .controls{
