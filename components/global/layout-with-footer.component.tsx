@@ -11,9 +11,11 @@ interface LayoutProps{
 
 const LayoutWithFooter:React.FC<LayoutProps> = ({className,title,meta,children}) => {
   return (
-    <div className={className}>
+    <div>
       <Nav />
-      {children}
+      <main className={className}>
+        {children}
+      </main>
       <Footer />
     </div>
   )

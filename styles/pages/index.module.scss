@@ -1,0 +1,41 @@
+@import '../normalize.style';
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.sign_in{
+  width:100vw;
+  height:calc(100vh - 80px);
+  @include flex(column,center,center,null);
+}
+
+.inner_wrapper{
+  width: 450px;
+  form{
+    input{
+      margin:30px 0px;
+      border:0px;
+      outline:none;
+      background: transparent;
+      &::placeholder{
+        color:$grey-500;
+      }
+      &:focus,&:active{
+        border:0px;
+        outline:none;
+      }
+    }
+    button{
+      @include normal-button-black;
+      display: block;
+      width: 100%;
+    }
+  }
+  span{
+    display: block;
+    margin:30px 0px;
+    a{
+      margin-left: 10px;
+    }
+  }
+}

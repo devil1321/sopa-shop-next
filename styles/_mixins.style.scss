@@ -24,3 +24,14 @@
     border:2px solid $black;
     font-weight: bold;
 }
+@mixin normal-button-black{
+    cursor: pointer;
+    margin:10px 0px;
+    width: 150px;
+    padding:10px 20px;
+    color:$white;
+    background-color: $black;
+    border-radius: 25px;
+    border:2px solid $black;
+    font-weight: bold;
+}
