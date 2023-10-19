@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/components/footer.module.scss'
+import styles from '@/styles/components/global/footer.module.scss'
 import Link from 'next/link'
 
 const Footer = () => {

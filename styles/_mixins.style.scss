@@ -41,3 +41,17 @@
         opacity: 0.7;
     }
 }
+@mixin normal-button-yellowish-green{
+    cursor: pointer;
+    margin:10px 0px;
+    width: 150px;
+    padding:10px 20px;
+    color:$black;
+    background-color: $yellowish-green;
+    border-radius: 25px;
+    border:2px solid $yellowish-green;
+    font-weight: bold;
+    &:hover{
+        opacity: 0.7;
+    }
+}

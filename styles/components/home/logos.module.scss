@@ -1,0 +1,18 @@
+@import '../../normalize.style';
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+.logos{
+    h2{
+        margin:100px auto;
+        text-align: center;
+        width: 70%;
+    }
+}
+.place{
+    margin-bottom:100px;
+    @include flex(row,space-between,center,null);
+    img:nth-of-type(2){
+        transform: translateX(-50px);
+    }
+}

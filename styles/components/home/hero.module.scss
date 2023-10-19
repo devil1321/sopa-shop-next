@@ -1,0 +1,25 @@
+@import '../../normalize.style';
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+.hero{
+    position: relative;
+    top:0px;
+    left:0px;
+    img{
+        width: 100%;
+    }
+}
+.details{
+    position: absolute;
+    bottom:50px;
+    left:50px;
+    h1{
+        color:$white;
+        width: 60%;
+    }
+    button{
+        @include normal-button-yellowish-green;
+        color:$black;
+    }
+}

@@ -1,7 +1,7 @@
-@import '../normalize.style';
-@import '../fonts.style';
-@import '../variables.style';
-@import '../mixins.style';
+@import '../../normalize.style';
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
 
 .footer{
     padding:80px 135px;
@@ -24,6 +24,7 @@
     &:first-of-type{
         width: 320px;
         color:$white;
+        transform: translateY(-40px);
         button{
             @include normal-button-white;
             width: 100%;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../../styles/components/nav.module.scss'
+import styles from '../../styles/components/global/nav.module.scss'
 import Link from 'next/link'
 
 interface ItemState {
