@@ -2,3 +2,46 @@
 @import '../fonts.style';
 @import '../variables.style';
 @import '../mixins.style';
+
+.footer{
+    padding:80px 135px;
+    background-color: $black;
+    @include flex(row,space-between,flex-start,null);
+}
+
+.column{
+    margin:0px 10px;
+    width: calc(100% / 5);
+    color:$white;
+    a{
+        display: block;
+        margin:30px 0px;
+        color:$white;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &:first-of-type{
+        width: 320px;
+        color:$white;
+        button{
+            @include normal-button-white;
+            width: 100%;
+            color:$white;
+            background: transparent;
+            border:2px solid $white;
+        }
+    }
+}
+.icons{
+    position: relative;
+    top:100px;
+    left:0px;
+}
+.icon{
+    margin-bottom:20px;
+    @include flex(row,flex-start,center,null);
+    span{
+        margin-left: 10px;
+    }
+}

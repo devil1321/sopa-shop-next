@@ -87,7 +87,9 @@ const Nav = () => {
       <div className={styles.nav_inner_wrapper}>
         <div className={styles.navigation}>
           <div className={styles.logo}>
-            <img src="/assets/logos/sopa-logo-black.png" alt="logo" />
+            <Link href="/home">
+              <img src="/assets/logos/sopa-logo-black.png" alt="logo" />
+            </Link>
           </div>
           <div className={styles.menu}> 
             <Link onClick={()=>handleCategory('men')} className='p4' href="#">Men</Link>
