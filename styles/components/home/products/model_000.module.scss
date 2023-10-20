@@ -2,7 +2,15 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
-
+.model{ 
+ margin:100px 0px;
+ button{
+    @include normal-button-yellowish-green;
+    display: block;
+    margin:0px auto;
+    color:$white;
+ }   
+}
 .place{
     padding:50px 0px;
     @include flex(row,center,center,wrap);

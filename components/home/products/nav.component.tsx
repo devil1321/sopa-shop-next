@@ -11,7 +11,7 @@ const Nav:React.FC<{categories:string[],handleCategory:(category:string) => void
 
   return (
     <div className={styles.nav}>
-      <h3 className='h8'>Explore Model 000</h3>
+      <h3 className='h8'>Explore Categories</h3>
       <div className={`${styles.categories} home__products-nav-categories`}>
         {categories?.map((category:string,i:number) => 
           <div onClick={(e:any) =>{ 

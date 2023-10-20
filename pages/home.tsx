@@ -9,6 +9,7 @@ const Home:React.FC<{products:any[]}> = ({products}) => {
     <GlobalComponents.LayoutWithFooter className={styles.home} title='Home' meta={[]}>
       <HomeComponents.Hero heading="Step inside, for comfort and magic await you." button="Shop Now" />
       <HomeComponents.Logos title="“These are the most thoughtfully designed sneakers on the market.”" />
+      <HomeComponents.ProductsComponents.Model_000 product={products[0]} />
       <HomeComponents.ProductsComponents.Products products={products} />
     </GlobalComponents.LayoutWithFooter>
   )
