@@ -1,0 +1,242 @@
+[
+    {
+        "id":1,
+        "name":"Model 000",
+        "category":"model",
+        "colors":[
+            {
+                "name":"Black & White",
+                "color":"#FFFFFF"
+            },
+            {
+                "name":"Black",
+                "color":"#02021D"
+            },
+            {
+                "name":"Steel",
+                "color":"#75869C"
+            },
+            {
+                "name":"Purple",
+                "color":"#A441EA"
+            },
+            {
+                "name":"Fresh Green",
+                "color":"#C1F651"
+            }
+        ],
+        "sizes":[39,40,41,42,43,44,45],
+        "rating":4.7,
+        "rating_count":3205,
+        "price":145,
+        "gender":["Woman","Men"],
+        "quantity":1,
+        "detais":"Step into a world of unparalleled comfort with Atoms' Model 000 - a timeless design that will change the way you think about footwear. From the moment you slip them on, you'll understand why this shoe has quickly become a customer favorite, with over 100 thousand pairs sold since its debut in 2019. Experience the ultimate in everyday footwear with Atoms' Model 000.",
+        "images":["/assets/model_000/product-1.png","/assets/model_000/product-2.png","/assets/model_000/product-3.png","/assets/model_000/product-4.png","/assets/model_000/product-5.png","/assets/model_000/product-6.png"],
+        "details_images":["/assets/model_000/detail-1.png","/assets/model_000/detail-2.png","/assets/model_000/detail-3.png","/assets/model_000/detail-4.png"]
+    },
+    {
+        "id":2,
+        "name":"Model 001",
+        "category":"model",
+        "colors":[
+            {
+                "name":"Black",
+                "color":"#02021D"
+            },
+            {
+                "name":"Steel",
+                "color":"#75869C"
+            }
+        ],
+        "sizes":[39,40,41,42,43,44,45],
+        "rating":3.7,
+        "rating_count":2205,
+        "price":179,
+        "gender":["Woman","Men"],
+        "quantity":1,
+        "detais":"Experience the enchanting comfort of Atoms like never before with Model 001 - equipped with a revamped outsole for unmatched support and stability in your everyday routine, boasting a lightweight, slip-resistant and durable design that guarantees stability with every stride. With innovative features such as hidden tongue loops for effortless wearing, tie-once elastic laces, and extra padding for reinforced comfort and breathability, Model 001 promises a delightful wearing experience that you won't want to take off.",
+        "images":[],
+        "details_images":["/assets/model_001/detail-1.png","/assets/model_001/detail-2.png","/assets/model_001/detail-3.png","/assets/model_001/detail-4.png"]
+    },
+    {
+        "id":3,
+        "name":"Sopa Stretach Laces",
+        "category":"accessories",
+        "colors":[
+            {
+                "name":"Black & White",
+                "color":"#FFFFFF"
+            },
+            {
+                "name":"Black",
+                "color":"#02021D"
+            },
+            {
+                "name":"Steel",
+                "color":"#75869C"
+            },
+            {
+                "name":"Purple",
+                "color":"#A441EA"
+            },
+            {
+                "name":"Fresh Green",
+                "color":"#C1F651"
+            },
+            {
+                "name":"Yellowish Green",
+                "color":"#81D376"
+            },
+            {
+                "name":"Reddish Orange",
+                "color":"#FE7B1E"
+            },
+            {
+                "name":"Dodger Blue",
+                "color":"#3184FF"
+            }
+        ],
+        "sizes":["Small","Medium","Large","X-Large"],
+        "rating":5,
+        "rating_count":4205,
+        "price":12,
+        "gender":[],
+        "quantity":1,
+        "detais":"Make putting on your shoes as easy as pulling on a T-shirt with Sopa Stretch Laces - their unique stretching properties adapt to your foot's movements and prevent getting untied, and now you can customize with multiple vibrant colors in the right size for your Sopa shoe",
+        "images":[],
+        "details_images":["/assets/laces/detail-1.png"]
+    },
+    {
+        "id":4,
+        "name":"Sopa Everyday Mask",
+        "category":"accessories",
+        "colors":[
+            {
+                "name":"Black & White",
+                "color":"#FFFFFF"
+            },
+            {
+                "name":"Black",
+                "color":"#02021D"
+            },
+            {
+                "name":"Steel",
+                "color":"#75869C"
+            },
+            {
+                "name":"Purple",
+                "color":"#A441EA"
+            },
+            {
+                "name":"Fresh Green",
+                "color":"#C1F651"
+            },
+            {
+                "name":"Yellowish Green",
+                "color":"#81D376"
+            },
+            {
+                "name":"Reddish Orange",
+                "color":"#FE7B1E"
+            },
+            {
+                "name":"Dodger Blue",
+                "color":"#3184FF"
+            }
+        ],
+        "sizes":["Small","Medium","Large","X-Large"],
+        "rating":4.2,
+        "rating_count":2505,
+        "price":12,
+        "gender":[],
+        "quantity":1,
+        "detais":"Comfortable & breathable everyday mask, with a polyester blend outer layer and a copper-lined ionized quartz yarn inner layer offers 84.6% filtration. Mask orders are not eligible for returns or exchange",
+        "images":[],
+        "details_images":["/assets/masks/details/detail-1.png","/assets/masks/details/detail-2.png","/assets/masks/details/detail-3.png","/assets/masks/details/detail-4.png","/assets/masks/details/detail-5.png","/assets/masks/details/detail-6.png","/assets/masks/details/detail-7.png"]
+    },
+    {
+        "id":5,
+        "name":"Model 000",
+        "category":"socks",
+        "colors":[
+            {
+                "name":"Black & White",
+                "color":"#FFFFFF"
+            },
+            {
+                "name":"Black",
+                "color":"#02021D"
+            },
+            {
+                "name":"Steel",
+                "color":"#75869C"
+            },
+            {
+                "name":"Purple",
+                "color":"#A441EA"
+            },
+            {
+                "name":"Fresh Green",
+                "color":"#C1F651"
+            }
+        ],
+        "sizes":["Small","Medium","Large","X-Large"],
+        "rating":4.7,
+        "rating_count":3305,
+        "price":145,
+        "gender":[],
+        "quantity":0,
+        "detais":"Our intention in designing the super-soft Atoms No-Show Socks was to create a seamless pairing with your Atoms shoes, resulting in an even more comfortable fit that can be worn every day - the perfect socks for your everyday shoes.",
+        "images":[],
+        "details_images":["/assets/socks/details/detail-1.png","/assets/socks/details/detail-2.png","/assets/socks/details/detail-3.png"]
+    },
+    {
+        "id":6,
+        "name":"Model 000",
+        "category":"socks",
+        "colors":[
+            {
+                "name":"Black & White",
+                "color":"#FFFFFF"
+            },
+            {
+                "name":"Black",
+                "color":"#02021D"
+            },
+            {
+                "name":"Steel",
+                "color":"#75869C"
+            },
+            {
+                "name":"Purple",
+                "color":"#A441EA"
+            },
+            {
+                "name":"Fresh Green",
+                "color":"#C1F651"
+            },
+            {
+                "name":"Yellowish Green",
+                "color":"#81D376"
+            },
+            {
+                "name":"Reddish Orange",
+                "color":"#FE7B1E"
+            },
+            {
+                "name":"Dodger Blue",
+                "color":"#3184FF"
+            }
+        ],
+        "sizes":["Small","Medium","Large","X-Large"],
+        "rating":4.7,
+        "rating_count":3305,
+        "price":15,
+        "gender":[],
+        "quantity":0,
+        "detais":"Our goal in designing the super-soft Atoms Crew Socks was to provide a seamless match with your Atoms shoes, enhancing your comfort for everyday wear - making them the perfect socks for your everyday shoes.",
+        "images":[],
+        "details_images":["/assets/socks/details/detail-1.png","/assets/socks/details/detail-2.png","/assets/socks/details/detail-3.png"]
+    }
+]
