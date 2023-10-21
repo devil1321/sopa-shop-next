@@ -1,0 +1,43 @@
+@import '../../normalize.style';
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.hype{
+    margin-bottom: 100px;
+    @include flex(row,space-between,center,null);
+}
+
+.image{
+    h3{
+        margin-bottom: 30px;
+        position: relative;
+        left:250px;
+        top:0px;
+    }
+}
+.column{
+    @include flex(row,space-between,center,null);
+}
+.inner_column{
+    p{
+        margin-left: 10px;
+    }
+}
+.stars{
+    margin:20px 0px;
+    @include flex(row,flex-start,center,null);
+    p{
+        margin:0px 10px;
+    }
+    img{
+        margin:0px 5px;
+    }
+}
+.foot{
+    @include flex(row,space-between,center,null);
+    button{
+        @include normal-button-yellowish-green;
+        color:$white;
+    }
+}

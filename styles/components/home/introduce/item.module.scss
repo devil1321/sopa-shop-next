@@ -1,0 +1,45 @@
+@import '../../../normalize.style';
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+.item{
+    margin:50px 0px;
+    @include flex(row,center,space-between,wrap);
+    h3{
+        width: 100%;
+        margin:30px 0px 30px 50px;
+        color:$white;
+    }
+    div{
+        cursor: pointer;
+        margin:0px 10px 20px;
+    }
+}
+.column{
+    width: 30%;
+    .img{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 25px;
+        &:hover{
+            box-shadow: 0px 0px 40px $grey-500;
+        }
+        &:last-of-type{
+            transform: translateY(20px);
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.image_main{
+    width: 62.5%;
+    overflow: hidden;
+    border-radius: 25px;
+    &:hover{
+        box-shadow: 0px 0px 40px $grey-500;
+    }
+    img{
+        width: 100%;
+    }
+}
