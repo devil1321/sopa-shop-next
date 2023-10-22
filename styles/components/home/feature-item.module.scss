@@ -1,0 +1,58 @@
+@import '../../normalize.style';
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.feature_item{
+    margin:100px 0px;
+    @include flex(row,center,stretch,null);
+    div,img{
+        width: 33%;
+    }
+}
+
+.column{
+    position: relative;
+    top:0px;
+    left:0px;
+    &:first-of-type{
+        color:$white;
+        background-color: $black;
+    }
+    button{
+        @include normal-button-white;
+        width: fit-content;
+        border:0px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -370%);
+    }
+    h2{
+        color:$white;
+        text-align: center;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    &:last-of-type{
+        button{
+            @include normal-button-black;
+            position: absolute;
+            left:50%;
+            bottom:10px;
+            transform: translateX(-50%);
+            max-height: 40px;
+        }
+        p{
+            width: 70%;
+            text-align: center;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-150%);
+        }
+    }
+}
+

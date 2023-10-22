@@ -1,0 +1,23 @@
+@import '../../normalize.style';
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.testimonials{
+    width: calc(100% + 135px);
+    position: relative;
+    top:0px;
+    left:50%;
+    transform:translateX(-50%);
+    margin-bottom: 100px;
+    h2,p{
+        text-align: center;
+        margin:30px 0px;
+    }
+}
+.images{
+    @include flex(row,space-between,center,null);
+    img{
+        margin:0px 10px;
+    }
+}

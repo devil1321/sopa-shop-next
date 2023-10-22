@@ -13,6 +13,9 @@ const Home:React.FC<{products:any[]}> = ({products}) => {
       <HomeComponents.ProductsComponents.Products products={products} />
       <HomeComponents.Hype />
       <HomeComponents.IntroduceComponents.Introduce products={products} />
+      <HomeComponents.FeatureItem img="/assets/home/feature-1.png" title="SOPA" button="Our Story" text="SOPA was born out of a simple yet powerful concept - creating a shoe that you would choose to wear every single day, and they've brought this idea to life in the bustling city of New York." />
+      <HomeComponents.FeatureItem img="/assets/home/feature-2.png" title="HUMANS OF NEW YORK" button="Featured" text="Read our co-founder Sidra’s story about struggle, chasing dreams, and making shoes." />
+      <HomeComponents.Testimonials />
     </GlobalComponents.LayoutWithFooter>
   )
 }

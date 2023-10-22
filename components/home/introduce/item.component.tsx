@@ -13,8 +13,8 @@ const Item:React.FC<any> = ({title,product,isRight}) => {
           <img src={product.details_images[2]} alt="image-2" />
         </div>
       </div>
-      <div className={styles.image_main}>
-        <img src={product.details_images[0]} alt="" />
+      <div className={styles.main_image}>
+        <img src={product.details_images[0]} alt="image-main" />
       </div>
     </div>
   )
