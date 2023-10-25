@@ -1,0 +1,15 @@
+@import '../normalize.style';
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.details{
+    padding:0px 135px;
+}
+
+.hero{
+    @include flex(row,flex-start,flex-start,null);
+}
+.hero_column{
+    width: 50%;
+}

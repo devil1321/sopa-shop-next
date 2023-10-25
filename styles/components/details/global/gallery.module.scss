@@ -1,0 +1,17 @@
+@import '../../../normalize.style';
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.gallery{
+    width:50%;
+    @include flex(row,space-between,center,wrap);
+    img{
+        cursor: pointer;
+        width: calc(50% - 2px);
+        border:1px solid transparent;
+        &:hover{
+            border:1px solid $black;
+        }
+    }
+}

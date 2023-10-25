@@ -1,9 +1,17 @@
-import { GlobalComponents } from '@/components/global'
 import React, { useEffect,useState } from 'react'
 import products from '@/public/db/products.json'
+import { useRouter } from 'next/router'
+import { GlobalComponents } from '@/components/global'
+import { DetailsComponents } from '@/components/details'
+import styles from '@/styles/pages/details.module.scss'
 
 const Details:React.FC<any> = ({params}) => {
   const [product,setProduct] = useState<any>({})
+
+  const router = useRouter()
+
+  const model_000_regex = /model_000/
+  const model_001_regex = /model_001/
 
   const handleProduct = () =>{
     const item = products.find((p:any) => p.id === Number(params.id))
@@ -15,7 +23,15 @@ const Details:React.FC<any> = ({params}) => {
   },[params])
 
   return (
-      <GlobalComponents.LayoutWithFooter className='details' title='Details' meta={[]}>
+      <GlobalComponents.LayoutWithFooter className={styles.details} title='Details' meta={[]}>
+        <div className={styles.hero}>
+          <DetailsComponents.Global.Gallery product={product} />
+          <div className={styles.hero_column}>
+            <DetailsComponents.Global.DetailsController product={product} /> 
+            <DetailsComponents.Global.Description product={product} /> 
+            <DetailsComponents.Global.DetailsFooter /> 
+          </div>
+        </div>
         {product.id}
       </GlobalComponents.LayoutWithFooter>
   )

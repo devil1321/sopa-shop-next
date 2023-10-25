@@ -1,0 +1,114 @@
+@import '../../../normalize.style';
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.controller{
+    padding:20px;
+}
+.stars{
+    margin:5px 0px;
+    @include flex(row,flex-start,center,null);
+    img{
+        width: 12px;
+        margin-right: 3px;
+    }
+    & > span{
+        margin-left:10px;
+        @include flex(row,flex-start,center,null);
+        span{
+            margin-left: 5px;
+        }
+    }
+}
+
+.colors{
+    @include flex(row,flex-start,center,wrap);
+    padding:10px 0px;
+    h3{
+        width: 100%;
+    }
+}
+
+.color{
+    cursor: pointer;
+    padding: 2px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    div{
+        pointer-events: none;
+        border:1px solid $grey-500;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+    }
+}
+
+.select{
+    h3{
+        margin:10px 0px;
+        @include flex(row,space-between,center,wrap);
+        span{
+            @include flex(row,space-between,center,wrap);
+            img{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.select_gender{
+    @include flex(row,space-between,center,wrap);
+    div{
+        cursor: pointer;
+        text-align: center;
+        width: 48%;
+        padding:10px 0px;
+        color:$grey-500;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        &:hover{
+            border: 2px solid $grey-500;
+        }
+    }
+}
+
+.sizes{
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+.select_size{
+    margin:5px 0px;
+    cursor: pointer;
+    @include flex(row,space-between,center,null);
+    padding:10px; 
+    border-radius: 10px;
+    span{
+        font-weight: bold;
+    }
+    &:hover{
+        background-color: $grey-300;
+    }
+}
+.sizes_menu{
+    padding:10px 0px;
+    border-radius: 10px;
+    border:1px solid $grey-500;
+    div{
+        cursor: pointer;;
+        padding:10px;
+        &:hover{
+            background-color: $grey-300;
+        }
+    }
+}
+.button{
+    @include normal-button-black;
+    width:100%;
+    display: block;
+    margin:5px auto;
+}

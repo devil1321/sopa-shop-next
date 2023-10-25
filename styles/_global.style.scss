@@ -102,3 +102,14 @@ a{
     background-color: $yellowish-green;
     color:$white;
 }
+.details__controller-color-active{
+    border:1px solid $grey-500 !important;
+}
+.details__controller-gender-active{
+    color:$black !important;
+    border:2px solid $black !important;
+}
+.details__button-in-cart{
+    background-color: $yellowish-green !important;
+    border:2px solid $yellowish-green !important;
+}
