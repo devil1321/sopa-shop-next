@@ -112,3 +112,18 @@
     display: block;
     margin:5px auto;
 }
+.foot{
+    h3{
+        margin:10px 0px 5px; 
+        @include flex(row,center,center,null);
+        span{
+            img{
+                margin:0px 3px;
+            }
+            @include flex(row,flex-start,center,null);
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
