@@ -44,7 +44,7 @@ const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
       <h2 className='p1'>{product.name}</h2>
       <div className={styles.stars}>
         {handleRating(product).map((rating:string) => <img key={rating} src="/assets/icons/star.png" alt="star" />)}
-        <span>{product.rating} <span>&#40;{product.rating_count}&#41;</span> </span>
+        <span className='p5'>{product.rating} <span>&#40;{product.rating_count}&#41;</span> </span>
       </div>
       <div className={styles.colors}>
         <h3 className='p5'>Color: {activeColor}</h3>
