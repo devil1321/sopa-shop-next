@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '@/styles/components/details/global/description.module.scss'
 
 interface DescriptionProps{
     product:any;
@@ -6,8 +7,8 @@ interface DescriptionProps{
 
 const Description:React.FC<DescriptionProps> = ({product}) => {
   return (
-    <div>
-      
+    <div className={styles.description}>
+      <p className="p4">{product.details}</p>
     </div>
   )
 }

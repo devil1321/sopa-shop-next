@@ -1,0 +1,23 @@
+@import '../../../normalize.style';
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.second_gallery{
+    @include flex(row,flex-start,space-between,null);
+}
+
+.part{
+    @include flex(row,flex-start,space-between,null);
+}
+.main_image{
+    margin:0px 10px;
+}
+.part_images{
+    position: relative;
+    top:-20px;
+    left:0px;
+    div{
+        margin:20px 0px;
+    }
+}

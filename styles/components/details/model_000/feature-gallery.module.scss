@@ -1,0 +1,41 @@
+@import '../../../normalize.style';
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.top_section{
+    @include flex(row,center,center,null);
+}
+.column{
+    overflow: hidden;
+    width: calc(50% - 40px);
+    margin:0px 20px;
+    &:first-of-type{
+        p{
+            width: 60%;
+        }
+    }
+    &:last-of-type{
+        p{
+            width: 80%;
+        }
+    }
+    p{
+        text-align: center;
+        margin:0px auto;
+    }
+    img{
+        width: 100%;
+    }
+}
+.bottom_section{
+    img{
+        width: 100%;
+    }
+    p{
+        width: 35%;
+        position: relative;
+        top:-100px;
+        left:0px;
+    }
+}

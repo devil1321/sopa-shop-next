@@ -1,17 +1,16 @@
 import React, { useEffect,useState } from 'react'
 import products from '@/public/db/products.json'
-import { useRouter } from 'next/router'
 import { GlobalComponents } from '@/components/global'
 import { DetailsComponents } from '@/components/details'
 import styles from '@/styles/pages/details.module.scss'
+import { HomeComponents } from '@/components/home'
 
 const Details:React.FC<any> = ({params}) => {
   const [product,setProduct] = useState<any>({})
 
-  const router = useRouter()
 
-  const model_000_regex = /model_000/
-  const model_001_regex = /model_001/
+  const model_000_regex = /Model 000/
+  const model_001_regex = /Model 001/
 
   const handleProduct = () =>{
     const item = products.find((p:any) => p.id === Number(params.id))
@@ -32,7 +31,10 @@ const Details:React.FC<any> = ({params}) => {
             <DetailsComponents.Global.DetailsFooter /> 
           </div>
         </div>
-        {product.id}
+        {model_000_regex.test(product.name) && <DetailsComponents.Model_000.FeatureGallery />}
+        <HomeComponents.Logos title='“These are the most thoughtfully designed sneakers on the market.”' />
+        <DetailsComponents.Global.SecondGallery />
+        <DetailsComponents.Global.CommentsComponents.Comments />
       </GlobalComponents.LayoutWithFooter>
   )
 }
