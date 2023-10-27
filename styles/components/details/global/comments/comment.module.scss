@@ -1,3 +1,51 @@
 @import '../../../../fonts.style';
 @import '../../../../variables.style';
 @import '../../../../mixins.style';
+
+.comment{
+    padding:20px;
+    &:first-of-type{
+    }
+    border-bottom: 1px solid $grey-300;
+    @include flex(row,flex-start,flex-start,null);
+    h3,p{
+        margin:5px 0px;
+    }
+}
+
+.about{
+    width: 25%;
+    p{
+        text-align: left;
+    }
+}
+.recomendation{
+    div{
+        @include flex(row,flex-start,center,null);
+        img{
+            width: 15px;
+            margin-right: 5px;
+        }
+    }
+}
+.comment_info{
+    width: 75%;
+    img{
+        margin-right:5px;
+        width: 15px;
+    }
+    h3,p{
+        text-align: left;
+    }
+}
+.votes{
+    @include flex(row,flex-start,center,null);
+    div{
+        margin-left: 5px;
+        img{
+            position: relative;
+            top:2px;
+            left:0px;
+        }
+    }
+}

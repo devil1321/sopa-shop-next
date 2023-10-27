@@ -9,7 +9,7 @@
     border-bottom: 1px solid $grey-500;
     @include flex(row,space-between,center,null);
     h2,p{
-        text-align: left;
+        text-align: left !important;
     }
     p{
         margin:0px !important;

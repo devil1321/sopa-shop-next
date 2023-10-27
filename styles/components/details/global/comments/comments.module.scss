@@ -3,10 +3,10 @@
 @import '../../../../mixins.style';
 
 .comments{
-    h2,p{
+    & > h2,p{
         text-align: center;
     }
-    p{
+    & > p{
         margin:30px auto !important;
         width: 45%;
     }
