@@ -1,0 +1,56 @@
+@import '../../../../fonts.style';
+@import '../../../../variables.style';
+@import '../../../../mixins.style';
+
+.form{
+    padding:0px 100px;
+    padding-bottom: 50px;
+    margin-bottom:30px;
+    border-bottom: 1px solid $grey-500;
+    @include flex(row,space-between,center,null);
+    h2,p{
+        text-align: left;
+    }
+    p{
+        margin:0px !important;
+    }
+}
+.rating{
+    width: 20%;
+    p{
+        min-width: fit-content !important;
+    }
+}
+
+.stars{
+    margin:20px 0px;
+}
+.form_wrapper{
+    width: 80%;
+}
+.input_header{
+    position: relative;
+    top:-10px;
+    left:0px;
+}
+.input{
+    width: 100%;
+    border: 0px;
+    border-bottom:1px solid $grey-500; 
+    position: relative;
+    top:-8px;
+    left:0px;
+    &:focus,&:active{
+        outline: none;
+    }
+    &:hover{
+        border-bottom: 1px solid $yellowish-green;
+    }
+}
+.input_footer{
+    margin-top: 5px;
+    p{
+        width: fit-content;
+    }
+    @include flex(row,space-between,center,null);
+}

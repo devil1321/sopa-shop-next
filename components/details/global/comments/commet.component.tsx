@@ -1,6 +1,17 @@
 import React from 'react'
 
-const Comment = () => {
+interface CommentProps{
+  author:string;
+  productName:string;
+  isRight:boolean;
+  rating:number;
+  heading:string;
+  text:string;
+  votesUp:number;
+  votesDown:number;
+}
+
+const Comment:React.FC<CommentProps> = () => {
   return (
     <div>
       

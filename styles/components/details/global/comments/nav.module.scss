@@ -1,0 +1,54 @@
+@import '../../../../fonts.style';
+@import '../../../../variables.style';
+@import '../../../../mixins.style';
+.nav{
+    h3,p{
+        margin:0px !important;
+        text-align: left;
+    }
+}
+.header{
+    @include flex(row,space-between,center,null);
+}
+
+.edit{
+    @include flex(row,flex-start,center,null);
+    img{
+        margin-right: 5px;
+    }
+}
+.footer{
+    margin: 30px 0px 50px;
+    @include flex(row,space-between,center,null);
+}
+.inner_nav{
+    @include flex(row,space-between,flex-start,null);
+    p{
+        margin:0px 10px !important;
+        min-width: fit-content;
+    }
+}
+.dropdown{
+    position: relative;
+    top:0px;
+    left:0px;
+    cursor: pointer;
+}
+.dropdown_menu{
+    padding:20px 0px;
+    width: 150px;
+    position: absolute;
+    top:30px;
+    left:0px;
+    border: 1px solid $grey-500;
+    background-color: $white;
+    border-radius: 10px;
+    p{
+        cursor: pointer;
+        padding:5px;
+        border-radius: 5px;
+        &:hover{
+            background-color: $grey-300;
+        }
+    }
+}
