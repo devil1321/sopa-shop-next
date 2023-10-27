@@ -9,7 +9,7 @@ interface DetailsControllerProps{
 
 const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
 
-  const [activeColor,setActiveColor] = useState<string>('Black & White')
+  const [activeColor,setActiveColor] = useState<string>('')
   const [isMenu,setIsMenu] = useState<boolean>(false)
   const [size,setSize] = useState<string>(()=>{
     if(product?.sizes){
@@ -36,6 +36,9 @@ const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
   useEffect(()=>{
     if(product?.sizes){
         setSize(product.sizes[0])
+    }
+    if(product?.colors){
+      setActiveColor(product.colors[0].name)
     }
   },[product])
 
