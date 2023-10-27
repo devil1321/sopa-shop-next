@@ -1,3 +1,55 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+.carousel_wrapper{
+    text-align: center;
+    p{
+        width: 50%;
+        margin: 30px auto 100px;
+    }
+}
+.carousel{
+    position: relative;
+    top:0px;
+    left:0px;
+}
+.view{
+    @include flex(row,center,flex-start,null);
+}
+.item{
+    position: relative;
+    top:0px;
+    left:0px;
+    min-width: 50%;
+    cursor: pointer;
+    &:hover{
+        .overlay{
+            opacity: 0;
+        }
+    }
+    img{
+        display: n;
+        max-width: 100%;
+    }
+}
+.overlay{
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($grey-500,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.controls{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 120%;
+    z-index: 4;
+    transform: translate(-50%,-50%);
+    @include flex(row,space-between,center,null);
+}

@@ -1,3 +1,19 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+.video{
+    position: relative;
+    top:0px;
+    left:0px;
+    margin-bottom: 100px;
+    img:first-of-type{
+        width: 100%;
+    }
+    img:last-of-type{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}

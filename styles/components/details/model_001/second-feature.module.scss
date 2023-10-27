@@ -1,3 +1,18 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+.second_feature{
+    width: 80%;
+    margin:100px auto;
+    @include flex(row,center,center,null);
+    img{
+        width: 50%;
+    }
+    h3,p{
+        margin: 20px 0px;
+    }
+}
+.details{
+    padding:30px;
+}
