@@ -31,8 +31,21 @@ const Details:React.FC<any> = ({params}) => {
             <DetailsComponents.Global.DetailsFooter /> 
           </div>
         </div>
-        {model_000_regex.test(product.name) && <DetailsComponents.Model_000.FeatureGallery />}
-        <HomeComponents.Logos title='“These are the most thoughtfully designed sneakers on the market.”' />
+        {model_000_regex.test(product.name) && 
+          <React.Fragment>
+           <DetailsComponents.Model_000.FeatureGallery />
+           <HomeComponents.Logos title='“These are the most thoughtfully designed sneakers on the market.”' />
+          </React.Fragment>}
+        {model_001_regex.test(product.name) && 
+          <React.Fragment>
+            <DetailsComponents.Model_001.Introduce />
+            <DetailsComponents.Model_001.Video />
+            <DetailsComponents.Model_001.CardsComponents.Cards />
+            <DetailsComponents.Model_001.Feature />
+            <DetailsComponents.Model_001.Carousel />
+            <DetailsComponents.Model_001.SecondFeature />
+          </React.Fragment>        
+        }
         <DetailsComponents.Global.SecondGallery />
         <DetailsComponents.Global.CommentsComponents.Comments />
       </GlobalComponents.LayoutWithFooter>
