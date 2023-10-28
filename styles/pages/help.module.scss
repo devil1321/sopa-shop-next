@@ -1,0 +1,18 @@
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.help{
+    padding: 0px 135px 50px;
+    @include flex(row,space-between,center,wrap);
+    h3,p{
+        width: 100%;
+        text-align: center;
+    }
+    h3{
+        margin:30px 0px;
+    }
+    p{
+        margin:10px 0px;
+    }
+}

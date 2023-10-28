@@ -1,0 +1,33 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.item{
+    margin:20px 10px;
+    cursor: pointer;
+    width: calc(100% / 3 - 20px);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0px 0px 20px $grey-500;
+        & > img{
+            transform: translateY(-20px);
+        }
+        div{
+            img{
+                transform: translateX(20px);
+            }
+        }
+    }
+    img{
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    div{
+        padding: 20px;
+        @include flex(row,flex-start,center,null);
+        img{
+            margin-left: 10px;
+            width: 20px;
+        }
+    }
+}
