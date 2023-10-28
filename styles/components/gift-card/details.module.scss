@@ -1,0 +1,81 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.details{
+    box-sizing: border-box;
+    padding:20px 100px 20px 20px !important;
+    p{
+        @include flex(row,space-between,center,null);
+    }
+    button{
+        @include normal-button-black;
+        width: 100%;
+    }
+}
+
+.nav{
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 100% !important;
+}
+
+.nav_header{
+    margin:20px 0px;
+    width: 100% !important;
+    @include flex(row,space-between,center,null);
+    p{
+        width: 100%;
+    }
+    span{
+        min-width: 40px;
+    }
+    div{
+        max-width: 100px;
+        @include flex(row,space-between,center,null);
+        img{
+            width:20px;
+        }
+    }
+}
+
+.value{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding:10px 5px;
+    width: 100% !important;
+    border-radius: 25px;
+    &:hover{
+        background-color: $grey-200;
+    }
+    @include flex(row,space-between,center,null);
+    img{
+        width: 20px;
+    }
+}
+
+.menu{
+    position: absolute;
+    top:90px;
+    left:0px;
+    z-index: 10;
+    width: 100% !important;
+    border-radius: 10px;
+    border:1px solid $grey-300;
+    background-color: $white;
+    padding:10px 0px;
+    p{
+        cursor: pointer;
+        padding:10px;
+        &:hover{
+            background-color: $grey-200;
+        }
+    }
+}
+.footer{
+    width: 100% !important;
+    p{
+        margin:20px 0px;
+    }
+}

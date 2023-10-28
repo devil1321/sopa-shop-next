@@ -11,6 +11,7 @@ const Details:React.FC<any> = ({params}) => {
 
   const model_000_regex = /Model 000/
   const model_001_regex = /Model 001/
+  const category_regex = /model/
 
   const handleProduct = () =>{
     const item = products.find((p:any) => p.id === Number(params.id))
@@ -31,12 +32,13 @@ const Details:React.FC<any> = ({params}) => {
             <DetailsComponents.Global.DetailsFooter /> 
           </div>
         </div>
-        {model_000_regex.test(product.name) && 
+        {model_000_regex.test(product.name) && category_regex.test(product.category) && 
           <React.Fragment>
            <DetailsComponents.Model_000.FeatureGallery />
            <HomeComponents.Logos title='“These are the most thoughtfully designed sneakers on the market.”' />
+           <DetailsComponents.Global.SecondGallery />
           </React.Fragment>}
-        {model_001_regex.test(product.name) && 
+        {model_001_regex.test(product.name) && category_regex.test(product.category) && 
           <React.Fragment>
             <DetailsComponents.Model_001.Introduce />
             <DetailsComponents.Model_001.Video />
@@ -44,9 +46,9 @@ const Details:React.FC<any> = ({params}) => {
             <DetailsComponents.Model_001.Feature />
             <DetailsComponents.Model_001.Carousel />
             <DetailsComponents.Model_001.SecondFeature />
+            <DetailsComponents.Global.SecondGallery />
           </React.Fragment>        
         }
-        <DetailsComponents.Global.SecondGallery />
         <DetailsComponents.Global.CommentsComponents.Comments />
       </GlobalComponents.LayoutWithFooter>
   )
