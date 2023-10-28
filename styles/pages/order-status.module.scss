@@ -4,8 +4,10 @@
 
 .order_status{
     padding: 0px 135px;
+    @include flex(row,space-between,flex-start,null);
+
 }
 
 .items{
-    @include flex(row,space-between,flex-start,null);
+    width: 70%;
 }

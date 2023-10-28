@@ -1,3 +1,54 @@
 @import '../../fonts.style';
 @import '../../variables.style';
 @import '../../mixins.style';
+
+.item{
+    cursor: pointer;
+    margin:10px 0px;
+    padding:20px;
+    border-radius: 10px;
+    border:1px solid $grey-400;
+    transition: all 0.3s ease-in-out;
+    @include flex(row,flex-start,center,null);
+    &:hover{
+        box-shadow: 0px 0px 20px $grey-500;
+    }
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    img{
+        width: 100%;
+    }
+}
+
+.details{
+    padding:10px 20px;
+}
+
+.color{
+    margin-top: 5px;
+    width: 50px;
+    height: 10px;
+    border:1px solid $grey-400;
+}
+
+.quantity{
+    p{
+        margin:10px 0px;
+    }
+}
+
+.quantity_controller{
+    @include flex(row,flex-start,center,null);
+    div{
+        @include flex(row,center,center,null);
+        height: 25px;
+        width: 40px;
+        border: 1px solid $grey-400;
+        &:hover{
+            background-color: $grey-300;
+        }
+    }
+}
