@@ -1,0 +1,11 @@
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.order_status{
+    padding: 0px 135px;
+}
+
+.items{
+    @include flex(row,space-between,flex-start,null);
+}

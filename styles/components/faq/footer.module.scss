@@ -1,0 +1,12 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.footer{
+    margin: 100px 0px;
+    text-align: center;
+    p{
+        margin:20px auto;
+        width: 50%;
+    }
+}

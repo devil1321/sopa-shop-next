@@ -1,0 +1,30 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.form{
+    width: 70%;
+    margin:0px auto;
+    h1{
+        text-align: center;
+    }
+}
+
+.field{
+    margin:100px 0px;
+    width: 100%;
+    @include flex(row,flex-start,center,null);
+    img{
+        margin-right: 5px;
+    }
+    input{
+        width: 80%;
+        background: transparent;
+        border:0px;
+        outline: none;
+        &:focus,&:active{
+            border:0px;
+            outline: none;
+        }
+    }
+}

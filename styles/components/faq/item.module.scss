@@ -1,0 +1,14 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.item{
+    margin:30px 10px;
+    width: calc(50% - 20px);
+    h3,p,a{
+        margin:20px 0px;
+    }
+    a{
+        color:$grey-500;
+    }
+}

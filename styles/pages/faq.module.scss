@@ -1,0 +1,11 @@
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.faq{
+    padding:0px 235px;
+}
+
+.items{
+    @include flex(row,flex-start,flex-start,wrap);
+}
