@@ -1,0 +1,9 @@
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.contact{
+    @include flex(row,space-between,flex-start,wrap);
+  
+    
+}

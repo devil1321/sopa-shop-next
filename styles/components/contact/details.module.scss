@@ -1,0 +1,27 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.details{
+    padding:100px 0px;
+    width:50%;
+}
+
+.item{
+    margin:20px 0px;
+    @include flex(row,flex-start,center,null);
+    img{
+        margin-right: 10px;
+    }
+}
+
+.link{
+    position: relative;
+    top:0px;
+    left:40px;
+    margin:20px 0px;
+    @include flex(row,flex-start,center,null);
+    img{
+        margin-right: 10px;
+    }
+}

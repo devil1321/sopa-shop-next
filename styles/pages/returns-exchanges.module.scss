@@ -1,0 +1,94 @@
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.returns_exchanges{
+    padding:30px 135px;
+    background-color: $grey-200;
+    height: 100vh;
+    a{
+        @include flex(row,flex-start,center,null);
+        @include normal-button-white;
+        border-radius: 15px;
+        border:0px;
+        font-weight: 100;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+
+.logo{
+    display: block;
+    margin: 30px auto 20px;
+}
+
+.form_wrapper{
+    box-sizing: border-box;
+    width: 35%;
+    background-color: $white;
+    margin:0px auto;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    h3,p{
+        margin:20px 0px;
+    }
+    fieldset{
+        padding:20px;
+        border-radius: 10px;
+        border:1px solid $dodger-blue;
+    }
+    legend{
+       padding:0px 10px;
+       margin-right: auto;
+       margin-left: 15px;
+       color:$dodger-blue;
+    }
+    button{
+        @include normal-button-white;
+        border:0px;
+        background-color: $grey-300;
+        width: 100%;
+        color:$grey-500;
+        font-weight: 100;
+        &:hover{
+            background-color: $grey-400;
+            color:$grey-800;
+        }
+    }
+    p:last-of-type{
+        color:$grey-500;
+    }
+    a{
+        @include normal-button-white;
+        width: 85%;
+        margin:10px auto;
+        color:$grey-500;
+        font-weight: 100;
+        border:1px solid $grey-400;
+        border-radius: 5px;
+        @include flex(row,center,center,null);
+        &:hover{
+            background-color: $grey-300;
+            color:$grey-800;
+        }
+    }
+}
+
+.field{
+    box-sizing: border-box;
+    padding:10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border:1px solid $grey-400; 
+    @include flex(row,flex-start,center,null);
+    input{
+        border:0px;
+        outline: none;
+        background: transparent;
+    }
+    &:has(input:focus){
+        border: 1px solid $dodger-blue;
+    }
+}  
