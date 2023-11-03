@@ -1,0 +1,11 @@
+@import '../fonts.style';
+@import '../variables.style';
+@import '../mixins.style';
+
+.blog{
+    padding:0px 135px;
+    @include flex(row,center,center,wrap);
+    h1,p{
+        text-align: center;
+    }
+}
