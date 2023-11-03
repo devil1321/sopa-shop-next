@@ -1,0 +1,19 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.item{
+    margin:100px 0px;
+    @include flex(row,center,center,null);
+    img{
+        width: 50%;
+    }
+    p{
+        margin:20px 0px;
+    }
+}
+
+.content{
+    width: 50%;
+    padding:30px;
+}

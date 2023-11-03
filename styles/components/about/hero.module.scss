@@ -1,0 +1,20 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.hero{
+    margin:100px 0px;
+    position: relative;
+    top:0px;
+    left:0px;
+    img:first-of-type{
+        width: 100%;
+    }
+    img:last-of-type{
+        position: absolute;
+        z-index: 2;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
