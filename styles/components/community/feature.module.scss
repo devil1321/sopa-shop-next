@@ -1,0 +1,18 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.feature{
+    margin: -200px 0px 50px;
+    @include flex(row,flex-start,center,null);
+}
+
+.content{
+    padding:20px;
+    h2,p{
+        margin:20px 0px;
+    }
+    button{
+        @include normal-button-yellowish-green;
+    }
+}

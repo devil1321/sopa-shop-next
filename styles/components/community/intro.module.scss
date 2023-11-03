@@ -1,0 +1,21 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.intro{
+    margin-bottom: 50px;
+    position: relative;
+    top:0px;
+    left:50%;
+    transform: translateX(-50%);
+    width: calc(100% + 270px);
+    padding:100px 235px;
+    background-color: $fresh-green;
+    h1,p{
+        text-align: center;
+    }
+    p{
+        width: 50%;
+        margin:20px auto;
+    }
+}

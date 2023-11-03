@@ -1,0 +1,27 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.third_feature{
+    padding:100px 50px;
+    background-color: $black;
+    color:$white;
+}
+
+.item{
+    @include flex(row,center,center,null);
+    &:first-of-type{
+        margin-bottom: 100px;
+    }
+    img{
+        width: 50%;
+    }
+}
+
+.content{
+    padding:40px;
+    width: 50%;
+    h3,p{
+        margin:20px 0px;
+    }
+}

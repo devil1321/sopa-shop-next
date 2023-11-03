@@ -1,0 +1,17 @@
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.intro{
+    h1,p{
+        text-align: center;
+    }
+    h1{
+        width: 80%;
+        margin: 0px auto;
+    }
+    p{
+        width: 45%;
+        margin: 0px auto;
+    }
+}

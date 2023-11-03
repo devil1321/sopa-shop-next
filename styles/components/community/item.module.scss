@@ -1,0 +1,38 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.item{
+    margin:20px;
+    width: calc(100% / 3 - 40px);
+    &:nth-of-type(4),&:nth-of-type(6),&:nth-of-type(10),&:nth-of-type(12){
+        transform: translateY(-300px);
+    }
+    &:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9){
+        margin-top: -300px;
+    }
+}
+.header{
+    margin:20px 0px;
+    @include flex(row,space-between,center,null);
+}
+.profile{
+    @include flex(row,space-between,center,null);
+}
+.profile_info{
+    margin-left: 10px;
+}
+.footer{
+    margin: 20px 0px;
+    @include flex(row,flex-start,center,null);
+}
+
+.likes{
+    @include flex(row,flex-start,center,null);
+    img{
+        margin-right: 5px;
+    }
+}
+.date{
+    margin-left: 20px;
+}

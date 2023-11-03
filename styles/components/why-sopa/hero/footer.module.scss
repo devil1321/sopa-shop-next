@@ -1,0 +1,15 @@
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.footer{
+    padding:100px;
+    color:$white;
+    background-color: $black;
+    p{
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+        line-height: 2;
+    }
+}

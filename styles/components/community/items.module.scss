@@ -1,0 +1,7 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.items{
+    @include flex(row,space-between,flex-start,wrap);
+}

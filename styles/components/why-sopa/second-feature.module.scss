@@ -1,0 +1,18 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.item{
+    @include flex(row,center,center,null);
+    img{
+        width: 50%;
+    }
+}
+
+.content{
+    padding:40px;
+    width: 50%;
+    h3,p{
+        margin:20px 0px;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.first_feature{
+    margin:100px 0px;
+    @include flex(row,center,center,null);
+    h3,p{
+        margin:20px 0px;
+    }
+}
+
+.content{
+    padding:40px;
+}
