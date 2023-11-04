@@ -11,7 +11,10 @@ const BlogDetails:React.FC<any> = ({params}) => {
   const handleImage = async() =>{
     const blogs = await fetch('/db/blog.json')
     const data = await blogs.json()
-    const item = data.find((b:any) => b.id = Number(params.id))
+    const item = data.filter((b:any) => b.id = Number(params.id)).map((b:any,i:number) => {
+        b.id = i + 1
+        return b
+    }).find((b:any) => b.id == Number(params.id))
     setImage(item?.img as string)
   }
 
