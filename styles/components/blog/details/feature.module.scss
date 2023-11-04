@@ -1,0 +1,12 @@
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.feature{
+    width: 60%;
+    margin:0px auto 30px;
+    img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
