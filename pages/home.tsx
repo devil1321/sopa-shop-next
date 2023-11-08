@@ -24,7 +24,7 @@ export default Home
 
 export async function getStaticProps() {
   // Fetch data from an API, database, or any other source
-  const response = await fetch('http://localhost:3000/db/products.json');
+  const response = await fetch('http://localhost:3000/public/db/products.json');
   const data = await response.json();
 
   return {
