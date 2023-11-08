@@ -25,15 +25,27 @@ const Home:React.FC<{products:any[]}> = ({products}) => {
 
 export default Home
 
-export async function getStaticProps() {
-  // Fetch data from an API, database, or any other source
-  const filePath = path.join(process.cwd(), 'public', 'db','products.json');
-  const response = await fetch(filePath);
-  const data = await response.json();
 
-  return {
-    props: {
-      products:data,
-    },
-  };
+export async function getStaticProps() {
+  // Get the absolute path to the JSON file in the public folder
+  const filePath = path.join(process.cwd(), 'public', 'db' ,'products.json');
+
+  try {
+    // Read the contents of the JSON file
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    const data = JSON.parse(fileContents);
+
+    return {
+      props: {
+        products: data,
+      },
+    };
+  } catch (error) {
+    console.error('Error reading JSON file:', error);
+    return {
+      props: {
+        products: [],
+      },
+    };
+  }
 }
