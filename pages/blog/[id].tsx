@@ -7,7 +7,7 @@ import styles from '@/styles/pages/blog-details.module.scss'
 const BlogDetails:React.FC<any> = ({params}) => {
 
   const [image,setImage] = useState<string>('')
-
+  
   const handleImage = async() =>{
     const blogs = await fetch('/db/blog.json')
     const data = await blogs.json()
