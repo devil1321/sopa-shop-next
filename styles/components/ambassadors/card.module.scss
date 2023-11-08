@@ -1,0 +1,21 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.card{
+    h3{
+        margin:30px 0px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.item{
+    margin:20px 0px;
+    @include flex(row,flex-start,center,null);
+    img{
+        margin-right: 10px;
+        width: 20px;
+    }
+}

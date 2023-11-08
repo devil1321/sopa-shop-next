@@ -1,0 +1,16 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.details{
+    position: relative;
+    top:100px;
+    left:0%;
+    text-align: center;
+    h3,p{
+        margin:20px 0px;
+    }
+    button{
+        @include normal-button-yellowish-green;
+    }
+}
