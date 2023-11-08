@@ -3,6 +3,9 @@ import { GlobalComponents } from '@/components/global'
 import styles from '@/styles/pages/home.module.scss'
 import { HomeComponents } from '@/components/home'
 
+import fs from 'fs/promises';
+import path from 'path';
+
 const Home:React.FC<{products:any[]}> = ({products}) => {
   console.log(products)
   return (
@@ -24,7 +27,8 @@ export default Home
 
 export async function getStaticProps() {
   // Fetch data from an API, database, or any other source
-  const response = await fetch('/db/products.json');
+  const filePath = path.join(process.cwd(), 'public', 'db','products.json');
+  const response = await fetch(filePath);
   const data = await response.json();
 
   return {
