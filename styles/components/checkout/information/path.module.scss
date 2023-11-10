@@ -1,3 +1,11 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+.paths{
+    margin-top:10px;
+    @include flex(row,flex-start,center,null);
+    p,img{
+        margin-right:5px;
+    }
+}

@@ -1,3 +1,37 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+.summary{
+    padding:20px 0px;
+    h3{
+        margin:10px 0px;
+        @include flex(row,space-between,center,null);
+    }
+    p{
+        @include flex(row,flex-start,center,null);
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+
+.btn_group{
+    @include flex(row,flex-start,stretch,null);
+    button{
+        @include normal-button-yellowish-green;
+        color:white;
+        width: fit-content;
+        margin:10px 1px;
+        &:first-of-type{
+            border-radius: 0px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        &:last-of-type{
+            border-radius: 0px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}

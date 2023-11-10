@@ -1,3 +1,23 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+
+.gift_card{
+    margin:30px 0px;
+    form{
+        @include flex(row,space-between,center,null);
+    }
+    input{
+        outline: none;
+        border:0px;
+        background: transparent;
+        &:active,&:focus{
+            outline: none;
+            border:0px;
+        }
+    }
+    button{
+        @include normal-button-yellowish-green;
+    }
+}

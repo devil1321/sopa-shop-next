@@ -1,3 +1,32 @@
 @import '../../../fonts.style';
 @import '../../../variables.style';
 @import '../../../mixins.style';
+
+
+.item{
+    @include flex(row,space-between,center,null);
+    img{
+        width: 50px;
+    }
+}
+
+.column{
+    position: relative;
+    top:0px;
+    left:0px;
+    @include flex(row,flex-start,center,null);
+    div{
+        margin-left: 10px;
+    }
+}
+
+.quantity{
+    position: absolute;
+    top:-8px;
+    left:30px;
+    border-radius: 100%;
+    color:$white;
+    padding: 0px 6px;
+    font-weight: bold;
+    background-color: $grey-700;
+}
