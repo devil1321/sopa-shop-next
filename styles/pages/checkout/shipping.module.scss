@@ -1,0 +1,13 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+.shipping{
+    padding:50px 135px;
+    @include flex(row,center,flex-start,null);
+}
+
+.column{
+    width: calc(50% - 40px);
+    padding:20px;
+}

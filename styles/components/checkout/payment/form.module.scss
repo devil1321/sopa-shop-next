@@ -1,0 +1,93 @@
+@import '../../../fonts.style';
+@import '../../../variables.style';
+@import '../../../mixins.style';
+
+.form{}
+
+.item{
+    margin:30px 0px;
+    @include flex(row,space-between,center,null);
+    p:first-of-type{
+        color:$grey-700;
+    }
+    input{
+        border:0px;
+        outline:none;
+        background: transparent;
+        &:active,&:focus{
+            border:0px;
+            outline:none;
+        }
+    }
+}
+
+.radio{
+    margin:30px 0px;
+    input{
+        position: relative;
+        top:2px;
+        left:0px;
+    }
+    @include flex(row,space-between,flex-start,null);
+}
+
+.label{
+    margin-left: 5px;
+}
+
+.cards{
+    @include flex(row,center,center,null);
+    img{
+        margin:0px 3px;
+    }
+    p{
+        min-width: fit-content;
+    }
+}
+.field{
+    margin:30px 0px;
+    label{
+        display: block;
+        color:$grey-700;
+    }
+    input{
+        border: 0px;
+        outline: none;
+        background: transparent;
+        &:active,&:focus{
+            border: 0px;
+            outline: none;
+        }
+    }
+}
+
+.group{
+    @include flex(row,space-between,center,null);
+}
+
+.cards_images{
+    img{
+        margin:30px 0px;
+        display: block;
+    }
+}
+
+.radio_address{
+    margin:30px 0px;
+    @include flex(row,flex-start,center,null);
+}
+
+
+.footer{
+    @include flex(row,space-between,center,null);
+    a{
+        @include flex(row,flex-start,center,null);
+        img{
+            margin-right: 5px;
+        }
+    }
+    button{
+        @include normal-button-yellowish-green;
+        width: fit-content;
+    }
+}
