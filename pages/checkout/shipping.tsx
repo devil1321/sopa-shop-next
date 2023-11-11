@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { InformationComponents } from '@/components/checkout/information'
 import styles from '@/styles/pages/checkout/shipping.module.scss'
 import { ShippingComponents } from '@/components/checkout/shipping'
+import { CheckoutModals } from '@/components/checkout/modals'
 
 const Shipping = () => {
   return (

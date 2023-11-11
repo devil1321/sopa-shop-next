@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { InformationComponents } from '@/components/checkout/information'
 import styles from '@/styles/pages/checkout/payment.module.scss'
 import { PaymentComponents } from '@/components/checkout/payment'
+import { CheckoutModals } from '@/components/checkout/modals'
 
 const Payment = () => {
   return (
