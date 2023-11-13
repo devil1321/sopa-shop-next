@@ -1,0 +1,104 @@
+[
+    {
+        "question":"Which feeling is more important to you when it comes to your shoes?",
+        "answers":[
+            {
+                "answer":"A light, cushiony feeling that’s somewhat springy",
+                "weight":1
+            },
+            {
+                "answer":"A light, cushiony feeling that’s somewhat springy",
+                "weight":2
+            },
+            {
+                "answer":"A light, cushiony feeling that’s somewhat springy",
+                "weight":3
+            }
+        ]
+    },
+    {
+        "question":"I spend  more time on my feet:",
+        "answers":[
+            {
+                "answer":"Indoors or light-walking situations",
+                "weight":1
+            },
+            {
+                "answer":"Outdoors or heavier walking situations",
+                "weight":2
+            },
+            {
+                "answer":"Both are equally important to me",
+                "weight":3
+            }
+        ]
+    },
+    {
+        "question":"I spend  more time on my feet:",
+        "answers":[
+            {
+                "answer":"Indoors or light-walking situations",
+                "weight":1
+            },
+            {
+                "answer":"Outdoors or heavier walking situations",
+                "weight":2
+            },
+            {
+                "answer":"Both are equally important to me",
+                "weight":3
+            }
+        ]
+    },
+    {
+        "question":"How long do you typically spend walking on any given day?",
+        "answers":[
+            {
+                "answer":"Less than 30 minutes",
+                "weight":1
+            },
+            {
+                "answer":"More than 30 minutes",
+                "weight":2
+            },
+            {
+                "answer":"I’m not sure",
+                "weight":3
+            }
+        ]
+    },
+    {
+        "question":"How long do you typically spend walking on any given day?",
+        "answers":[
+            {
+                "answer":"A more masculine look",
+                "weight":1
+            },
+            {
+                "answer":"A more unisex look",
+                "weight":2
+            },
+            {
+                "answer":"I don’t have perference",
+                "weight":3
+            }
+        ]
+    },
+    {
+        "question":"As far as shoe fit goes, I typically;",
+        "answers":[
+            {
+                "answer":"Experience some variation in my shoe size",
+                "weight":1
+            },
+            {
+                "answer":"Wear the same size in most of my shoes",
+                "weight":2
+            },
+            {
+                "answer":"I’m not sure",
+                "weight":3
+            }
+        ]
+    }
+]

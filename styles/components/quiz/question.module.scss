@@ -1,0 +1,32 @@
+@import '../../fonts.style';
+@import '../../variables.style';
+@import '../../mixins.style';
+
+
+.question{
+    width: 40%;
+    height: 100%;
+    padding:50px;
+    border:1px solid $grey-500;
+    border-radius: 10px;
+    h3,p{
+        margin:10px 0px;
+    }
+   
+}
+
+.answer{
+    @include flex(row,flex-start,center,null);
+    p:first-of-type{
+        cursor: pointer;
+        margin-right: 10px;
+        padding:10px 25px;
+        border-radius: 25px;
+        border:1px solid $grey-500;
+    }
+}
+
+.active{
+    color:$white;
+    background-color: $black;
+}
