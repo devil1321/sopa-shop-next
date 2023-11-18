@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from './nav.component';
+import Cart from './cart.component';
 
 interface LayoutProps{
     className:string;
@@ -10,7 +11,8 @@ interface LayoutProps{
 
 const Layout:React.FC<LayoutProps> = ({className,title,meta,children}) => {
   return (
-    <div>
+    <div className='container'>
+      <Cart />
       <Nav />
       <main className={className}>
         {children}

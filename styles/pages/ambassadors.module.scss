@@ -5,8 +5,21 @@
 .ambassadors{
     padding:100px 135px;
     @include flex(row,center,flex-start,null);
+    @include breakpoint-down(medium){
+        padding:0px 60px;
+    }
+    @include breakpoint-down(small){
+        padding:0px 10px;
+        display: block;
+    }
     & > div{
         width: calc(100% / 3 - 20px);
         margin:0px 10px;
+        @include breakpoint-down(small){
+            width: 100%;
+            &:first-of-type{
+                margin:0px 0px 150px;
+            }
+        }
     }
 }

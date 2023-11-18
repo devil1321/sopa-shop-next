@@ -6,6 +6,9 @@
     width:50%;
     margin-bottom: 100px;
     @include flex(row,space-between,center,wrap);
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     img{
         cursor: pointer;
         border:1px solid transparent;

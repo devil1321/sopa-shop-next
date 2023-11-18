@@ -4,4 +4,7 @@
 
 .items{
     @include flex(row,space-between,flex-start,wrap);
+    @include breakpoint-down(medium){
+        display: block;
+    }
 }

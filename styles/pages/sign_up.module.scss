@@ -8,8 +8,16 @@
 }
 .inner_wrapper{
     width: 450px;
+    @include breakpoint-down(small){
+        box-sizing: border-box;
+        padding: 0px 20px;
+        width: 100%;
+    }
     h1{
         margin-bottom: 50px;
+        @include breakpoint-down(small){
+            font-size: 30px;
+        }
     }
     fieldset{
         padding:5px 0px;

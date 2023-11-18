@@ -6,6 +6,9 @@
     width:30%;
     margin:0px auto;
     margin-bottom:100px;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     h3{
         margin-bottom:30px;
     }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from '@/styles/components/details/global/details-controller.module.scss'
 import handleRating from '@/lib/handle-rating';
 import { off } from 'process';
+import Link from 'next/link';
 
 interface DetailsControllerProps{
     product:any;
@@ -90,7 +91,9 @@ const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
       </div>
       {!product?.inCart 
         ? <button className={styles.button}>Add To Bag {product?.price}$</button>
-        : <button className={`${styles.button} details__button-in-cart`}>In Cart</button>}
+        : <Link href="/gift-card">
+            <button className={`${styles.button} details__button-in-cart`}>In Cart</button>
+          </Link>}
         <div className={styles.foot}>
             <h3 className='p5'>4 payments of $36.25 using <span>Shop <img src="/assets/icons/pay.png" alt="pay" />Or afterpay</span></h3>
             <p className='p5'>Free shipping on orders over $30 & free returns in the US</p>

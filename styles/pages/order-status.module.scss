@@ -5,9 +5,19 @@
 .order_status{
     padding: 0px 135px;
     @include flex(row,space-between,flex-start,null);
+    @include breakpoint-down(medium){
+        padding:0px 60px;
+    }
+    @include breakpoint-down(small){
+        padding:0px 10px;
+        display: block;
+    }
 
 }
 
 .items{
     width: 70%;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
 }

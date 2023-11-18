@@ -6,6 +6,10 @@
     padding:80px 135px;
     background-color: $black;
     @include flex(row,space-between,flex-start,null);
+    @include breakpoint-down(small){
+        @include flex(row,space-between,flex-start,wrap);
+        padding:50px 10px;
+    }
 }
 
 .column{
@@ -37,10 +41,17 @@
     position: relative;
     top:100px;
     left:0px;
+    @include breakpoint-down(small){
+        top:0px;
+        @include flex(row,space-between,flex-start,null);
+    }
 }
 .icon{
     margin-bottom:20px;
     @include flex(row,flex-start,center,null);
+    @include breakpoint-down(small){
+        margin:10px;
+    }
     span{
         margin-left: 10px;
     }

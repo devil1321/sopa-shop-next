@@ -4,6 +4,7 @@
 
 .contact{
     @include flex(row,space-between,flex-start,wrap);
-  
-    
+    @include breakpoint-down(small){
+        display: block;
+    }
 }

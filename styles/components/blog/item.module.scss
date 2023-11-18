@@ -5,6 +5,9 @@
 .item{
     width: calc(100% / 2 - 40px);
     margin:20px;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     img{
         width: 100%;
     }

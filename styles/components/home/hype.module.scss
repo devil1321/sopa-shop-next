@@ -5,6 +5,12 @@
 .hype{
     margin-bottom: 100px;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        display: block;
+        img{
+            margin: 10px 0px;
+        }
+    }
 }
 
 .image{
@@ -13,6 +19,9 @@
         position: relative;
         left:250px;
         top:0px;
+        @include breakpoint-down(small){
+            left:0px;
+        }
     }
 }
 .column{
@@ -21,6 +30,9 @@
 .inner_column{
     p{
         margin-left: 10px;
+        @include breakpoint-down(medium){
+            width: 200px;
+        }
     }
 }
 .stars{
@@ -38,5 +50,12 @@
     button{
         @include normal-button-yellowish-green;
         color:$white;
+        @include breakpoint-down(medium){
+            display: block;
+            margin-left: 20px;
+        }
+    }
+    @include breakpoint-down(medium){
+        @include flex(row,flex-start,center,null);
     }
 }

@@ -9,9 +9,20 @@
     h1{
         width: 80%;
         margin: 0px auto;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
     p{
         width: 45%;
         margin: 0px auto;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
+    }
+    @include breakpoint-down(medium){
+        img{
+            width: 100%;
+        }
     }
 }

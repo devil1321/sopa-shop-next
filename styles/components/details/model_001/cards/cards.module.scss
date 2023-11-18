@@ -5,4 +5,7 @@
 .cards{
     margin-bottom: 150px;
     @include flex(row,center,center,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
 }

@@ -7,6 +7,12 @@
 }
 .categories{
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        @include flex(column,space-between,center,null);
+        div{
+            margin:10px 0px;
+        }
+    }
 }
 .category{
     cursor: pointer;

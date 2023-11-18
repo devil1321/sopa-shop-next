@@ -5,6 +5,12 @@
 .details{
     box-sizing: border-box;
     padding:20px 100px 20px 20px !important;
+    @include breakpoint-down(small){
+        padding:10px !important;
+    }
+    img{
+        width: 20px !important;
+    }
     p{
         @include flex(row,space-between,center,null);
     }

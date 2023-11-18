@@ -16,7 +16,13 @@
 }
 .images{
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
     img{
         margin:0px 10px;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
 }

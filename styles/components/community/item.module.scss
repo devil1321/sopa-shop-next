@@ -5,19 +5,43 @@
 .item{
     margin:20px;
     width: calc(100% / 3 - 40px);
+    @include breakpoint-down(medium){
+        width: 100%;
+        img:last-of-type{
+            width:60%;
+            display: block;
+            margin:0px auto;
+        }
+    }
+    p{
+        @include breakpoint-down(small){
+            width: 90%;
+        }
+    }
     &:nth-of-type(4),&:nth-of-type(6),&:nth-of-type(10),&:nth-of-type(12){
         transform: translateY(-300px);
+        @include breakpoint-down(medium){
+            transform: translateY(0px);
+        }
     }
     &:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9){
         margin-top: -300px;
+        @include breakpoint-down(medium){
+            margin-top: 0px;
+            transform: translateY(0px);
+        }
     }
 }
 .header{
     margin:20px 0px;
     @include flex(row,space-between,center,null);
+    img{
+        width: 20px !important;
+    }
 }
 .profile{
     @include flex(row,space-between,center,null);
+    
 }
 .profile_info{
     margin-left: 10px;
@@ -25,6 +49,9 @@
 .footer{
     margin: 20px 0px;
     @include flex(row,flex-start,center,null);
+    img{
+        width: 20px !important;
+    }
 }
 
 .likes{

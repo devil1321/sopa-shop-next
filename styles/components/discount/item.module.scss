@@ -5,8 +5,14 @@
 .item{
     margin:100px 0px;
     @include flex(row,center,center,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
     img{
         width: 50%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
     p{
         margin:20px 0px;
@@ -16,4 +22,8 @@
 .content{
     width: 50%;
     padding:30px;
+    @include breakpoint-down(small){
+        width: 100%;
+        padding: 10px;
+    }
 }

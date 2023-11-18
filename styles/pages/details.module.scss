@@ -4,11 +4,20 @@
 
 .details{
     padding:0px 135px;
+    @include breakpoint-down(small){
+        padding:0px 10px;
+    }
 }
 
 .hero{
     @include flex(row,flex-start,flex-start,null);
+    @include breakpoint-down(small){
+        @include flex(column,flex-start,flex-start,null);
+    }
 }
 .hero_column{
     width: 50%;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
 }

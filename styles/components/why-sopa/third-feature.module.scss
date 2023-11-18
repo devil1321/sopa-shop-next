@@ -6,21 +6,34 @@
     padding:100px 50px;
     background-color: $black;
     color:$white;
+    @include breakpoint-down(small){
+        padding:100px 10px;
+    }
 }
 
 .item{
     @include flex(row,center,center,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
     &:first-of-type{
         margin-bottom: 100px;
     }
     img{
         width: 50%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
 }
 
 .content{
     padding:40px;
     width: 50%;
+    @include breakpoint-down(small){
+        width: 100%;
+        padding: 10px;
+    }
     h3,p{
         margin:20px 0px;
     }

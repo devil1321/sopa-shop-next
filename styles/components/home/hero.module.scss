@@ -13,9 +13,17 @@
     position: absolute;
     bottom:50px;
     left:50px;
+    @include breakpoint-down(small){
+        bottom: 20px;
+    }
     h1{
         color:$white;
         width: 60%;
+        @include breakpoint-down(small){
+            width: 100%;
+            font-size: 30px;
+            line-height: 1;
+        }
     }
     button{
         @include normal-button-yellowish-green;

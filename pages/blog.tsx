@@ -10,6 +10,7 @@ const Blog:React.FC<any> = ({items}) => {
       {items?.map((item:any) => 
         <BlogComponents.Item 
           key={item.id} 
+          id={item.id}
           img={item.img} 
           title={item.title} 
           text={item.text} 

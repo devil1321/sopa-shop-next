@@ -5,6 +5,9 @@
 .feature{
     width: 60%;
     margin:0px auto 30px;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     img{
         width: 100%;
         margin-bottom: 20px;

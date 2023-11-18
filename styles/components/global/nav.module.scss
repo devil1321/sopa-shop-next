@@ -17,8 +17,29 @@
 }
 
 .nav_inner_wrapper{
-    padding:0px 135px;    
+    padding:0px 135px; 
+    @include breakpoint-down(medium){
+        padding:0px 60px;
+    }   
 }
+
+.hamburger{
+    display: none;
+    @include breakpoint-down(small){
+        display: block;
+        position: relative;
+        left: -40px;
+        top:0px;
+    }
+    span{
+        width: 20px;
+        display: block;
+        margin:5px 0px;
+        height: 2px;
+        background-color: $black;
+    }
+}
+
 .header{
     padding: 5px 0px;    
     text-align: center;
@@ -29,12 +50,36 @@
     @include flex(row,space-between,center,null);
 }
 .logo{
-    width:10%
+    width:10%;
+    @include breakpoint-down(small){
+        position: relative;
+        left:-100px;
+        top:0px;
+    }
 }
 .menu{
     padding: 0px 180px;
     width: 70%;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(medium){
+        min-width:90%;
+        box-sizing: border-box;
+    }
+    @include breakpoint-down(small){
+        position: absolute;
+        top:80px;
+        left:2%;
+        z-index: 10;
+        background-color: $white;
+        box-shadow: 0px 0px 10px $grey-500;
+        border-radius: 10px;
+        @include flex(column,center,center,null);
+        a{
+            margin:10px 0px;
+            min-width:200px; 
+            text-align: center;
+        }
+    }
     a:hover{
         text-decoration: underline;
     }
@@ -54,6 +99,18 @@
 .controls{
     width: 20%;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(medium){
+        min-width: 15%;
+        position:relative;
+        right: 120px;
+        top:0px;
+    }
+    @include breakpoint-down(small){
+        right: 30px;
+        img{
+            margin:0px 10px;
+        }
+    }
 }
 .main_menu_wrapper{
     margin:0px auto;

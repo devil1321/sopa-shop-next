@@ -4,10 +4,11 @@
 
 .comment{
     padding:20px;
-    &:first-of-type{
-    }
     border-bottom: 1px solid $grey-300;
     @include flex(row,flex-start,flex-start,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
     h3,p{
         margin:5px 0px;
     }
@@ -15,6 +16,10 @@
 
 .about{
     width: 25%;
+    @include breakpoint-down(small){
+        width: 100%;
+        margin:20px 0px;
+    }
     p{
         text-align: left !important;
     }
@@ -30,6 +35,9 @@
 }
 .comment_info{
     width: 75%;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     img{
         margin-right:5px;
         width: 15px;

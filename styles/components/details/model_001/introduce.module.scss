@@ -5,6 +5,9 @@
 .introduce{
     width: 40%;
     margin:50px auto 30px;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     h2{
         margin-bottom: 30px;
     }

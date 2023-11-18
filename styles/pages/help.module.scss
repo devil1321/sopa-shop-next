@@ -5,6 +5,9 @@
 .help{
     padding: 0px 135px 50px;
     @include flex(row,space-between,center,wrap);
+    @include breakpoint-down(small){
+        padding:10px;
+    }
     h3,p{
         width: 100%;
         text-align: center;

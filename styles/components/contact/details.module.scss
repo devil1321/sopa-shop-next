@@ -5,6 +5,9 @@
 .details{
     padding:100px 0px;
     width:50%;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
 }
 
 .item{

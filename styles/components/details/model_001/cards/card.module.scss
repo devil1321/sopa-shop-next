@@ -4,6 +4,9 @@
 
 .card{
     text-align: center;
+    @include breakpoint-down(small){
+        margin:30px 0px;
+    }
     &:first-of-type{
         h3,p{
             position: relative;

@@ -4,4 +4,10 @@
 
 .home{
     padding:0px 135px;
+    @include breakpoint-down(medium){
+        padding:0px 60px;
+    }
+    @include breakpoint-down(small){
+        padding:0px 10px;
+    }
 }

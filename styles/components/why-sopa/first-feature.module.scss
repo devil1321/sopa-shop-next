@@ -5,6 +5,12 @@
 .first_feature{
     margin:100px 0px;
     @include flex(row,center,center,null);
+    @include breakpoint-down(small){
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
     h3,p{
         margin:20px 0px;
     }

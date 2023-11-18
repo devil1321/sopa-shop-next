@@ -9,9 +9,15 @@
     h3{
         width: 40%;
         margin:50px auto 30px;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
     p{
         width: 40%;
         margin: 0px auto 100px;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
 }

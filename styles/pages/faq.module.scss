@@ -4,6 +4,12 @@
 
 .faq{
     padding:0px 235px;
+    @include breakpoint-down(medium){
+        padding:0px 60px;
+    }
+    @include breakpoint-down(small){
+        padding: 10px;
+    }
 }
 
 .items{

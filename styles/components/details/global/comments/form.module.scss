@@ -8,8 +8,15 @@
     margin-bottom:30px;
     border-bottom: 1px solid $grey-500;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        display: block;
+        padding: 0px 10px;
+    }
     h2,p{
         text-align: left !important;
+        @include breakpoint-down(small){
+            text-align: center !important; 
+        }
     }
     p{
         margin:0px !important;
@@ -17,6 +24,10 @@
 }
 .rating{
     width: 20%;
+    @include breakpoint-down(small){
+        width: 100%;
+        text-align: center;
+    }
     p{
         min-width: fit-content !important;
     }
@@ -27,6 +38,10 @@
 }
 .form_wrapper{
     width: 80%;
+    @include breakpoint-down(small){
+        width: 100%;
+        margin:20px 0px;
+    }
 }
 .input_header{
     position: relative;

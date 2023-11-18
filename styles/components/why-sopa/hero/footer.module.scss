@@ -6,6 +6,9 @@
     padding:100px;
     color:$white;
     background-color: $black;
+    @include breakpoint-down(small){
+        padding:10px;
+    }
     p{
         text-align: center;
         width: 80%;

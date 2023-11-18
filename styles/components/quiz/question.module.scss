@@ -30,3 +30,20 @@
     color:$white;
     background-color: $black;
 }
+
+.percentage_wrapper{
+    position: relative;
+    top:100px;
+    left:0px;
+    width: 100%;
+    height: 15px;
+    border-radius: 25px;
+    background-color: $white;
+    border:1px solid $grey-500;
+}
+
+.percentage{
+    border-radius: 25px;
+    background-color: $black;
+    height: 15px;
+}

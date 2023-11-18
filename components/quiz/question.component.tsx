@@ -64,7 +64,9 @@ const Question:React.FC<QuestionProps> = ({index,setIndex,weight,setWeight}) => 
                  </div>
         }
       })}
-      <div className={styles.percentage} style={{width:index * 20 + "%"}}></div>
+      <div className={styles.percentage_wrapper}>
+        <div className={styles.percentage} style={{width:index * 20 + "%"}}></div>
+      </div>
     </div>
   )
 }

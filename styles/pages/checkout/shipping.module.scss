@@ -4,10 +4,20 @@
 
 .shipping{
     padding:50px 135px;
+    @include breakpoint-down(medium){
+        padding:50px 60px;
+    }
+    @include breakpoint-down(small){
+        padding:50px 10px;
+        display: block;
+    }
     @include flex(row,center,flex-start,null);
 }
 
 .column{
     width: calc(50% - 40px);
     padding:20px;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
 }

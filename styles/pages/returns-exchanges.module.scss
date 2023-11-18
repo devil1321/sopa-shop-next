@@ -6,6 +6,9 @@
     padding:30px 135px;
     background-color: $grey-200;
     height: 100vh;
+    @include breakpoint-down(small){
+        padding:10px;
+    }
     a{
         @include flex(row,flex-start,center,null);
         @include normal-button-white;
@@ -31,6 +34,12 @@
     padding:20px;
     border-radius: 10px;
     text-align: center;
+    @include breakpoint-down(medium){
+        width: 60%;
+    }
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     h3,p{
         margin:20px 0px;
     }

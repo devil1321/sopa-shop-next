@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../../styles/components/global/nav.module.scss'
 import Link from 'next/link'
 
@@ -81,11 +81,46 @@ const Nav = () => {
     }
   }
 
+  const handleMenu = () =>{
+    const menu = document.querySelector(`.${styles.menu}`) as HTMLDivElement
+    if(!menu?.classList.contains('menu-open')){
+      menu?.classList.add("menu-open")
+      menu.style.display = 'flex'
+    }else{
+      menu?.classList.remove("menu-open")
+      menu.style.display = 'none'
+    }
+  }
+
+  const handleFixMenuSmall = () =>{
+    const menu = document.querySelector(`.${styles.menu}`) as HTMLDivElement
+    if(typeof window !== undefined){
+      if(window.innerWidth < 1024){
+        menu.style.display = 'none'
+      }
+    }
+  }
+
+  const handleOpenCart = () =>{
+    const cart = document.querySelector(`.cart`) as HTMLDivElement
+    cart.style.transform = 'translateX(0px)'
+  }
+
+
+  useEffect(()=>{
+    handleFixMenuSmall()
+  },[])
+
   return (
     <div className={styles.nav}>
       <div className={`${styles.header} p3`}>Free US shipping on order $80+</div>
       <div className={styles.nav_inner_wrapper}>
         <div className={styles.navigation}>
+        <div className={styles.hamburger} onClick={()=>handleMenu()}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div className={styles.logo}>
             <Link href="/home">
               <img src="/assets/logos/sopa-logo-black.png" alt="logo" />
@@ -101,7 +136,7 @@ const Nav = () => {
           <div className={styles.controls}>
             <Link href="/help">Support</Link>
             <img src="/assets/icons/user.png" alt="user" />
-            <img src="/assets/icons/cart.png" alt="user" />
+            <img onClick={()=>handleOpenCart()} src="/assets/icons/cart.png" alt="user" />
           </div>
         </div>
         {isMenu && 
