@@ -3,7 +3,7 @@ import styles from '@/styles/pages/checkout/information.module.scss'
 import { InformationComponents } from '@/components/checkout/information'
 import { CheckoutModals } from '@/components/checkout/modals'
 
-const Information = () => {
+const Information:React.FC<any> = (props) => {
 
   const [isRefundPolicy,setIsRefundPolicy] = useState<boolean>(false)
   const [isPrivacyPolicy,setIsPrivacyPolicy] = useState<boolean>(false)
@@ -28,9 +28,13 @@ const Information = () => {
           />
         </div>
         <div className={styles.column}>
-          <InformationComponents.Item />
+          {props.cart.map((c:any)=>{
+            return(
+              <InformationComponents.Item product={c} />
+              )  
+          })}
           <InformationComponents.GiftCard />
-          <InformationComponents.Summary />
+          <InformationComponents.Summary summary={props.summary} />
         </div>
       </div>
     </React.Fragment>

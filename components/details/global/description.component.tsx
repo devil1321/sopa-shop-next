@@ -8,7 +8,7 @@ interface DescriptionProps{
 const Description:React.FC<DescriptionProps> = ({product}) => {
   return (
     <div className={styles.description}>
-      <p className="p4">{product.details}</p>
+      <p className="p4">{product?.details}</p>
     </div>
   )
 }

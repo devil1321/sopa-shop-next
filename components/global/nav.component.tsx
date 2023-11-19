@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 interface ItemState {
   id:number;
+  link:string;
   img:string;
   name?:string;
   footer:string;
@@ -18,12 +19,14 @@ const Nav = () => {
     [
       {
         id:1,
+        link:'/details/1',
         img:'/assets/nav/men/model_000.png',
         name:'Model 000',
         footer:'Cushiony Comfort'
       },
       {
         id:2,
+        link:'details/2',
         img:'/assets/nav/men/model_001.png',
         name:'Model 001',
         footer:'Supportive & Durable'
@@ -32,12 +35,14 @@ const Nav = () => {
     [
       {
         id:3,
+        link:'/details/1',
         img:'/assets/nav/woman/model_000.png',
         name:'Model 000',
         footer:'Cushiony Comfort'
       },
       {
         id:4,
+        link:'/details/2',
         img:'/assets/nav/woman/model_001.png',
         name:'Model 001',
         footer:'Supportive & Durable'
@@ -46,12 +51,14 @@ const Nav = () => {
     [
       {
         id:5,
+        link:"/details/3",
         img:'/assets/nav/accessories/accessory_000.png',
         footer:'Sopa Stretch Laces',
         price:12
       },
       {
         id:6,
+        link:'/details/4',
         img:'/assets/nav/accessories/accessory_001.png',
         footer:'Sopa Everyday Mask',
         price:12
@@ -156,7 +163,7 @@ const Nav = () => {
 
 const Item:React.FC<{item:ItemState}> = ({item}) => {
   return(
-    <Link href="#" as="#" className={styles.item}>
+    <Link href="/details/[id]" as={item.link} className={styles.item}>
       <div>
         <img src={item.img} alt="item-image" />
         {item?.name && <button>{item?.name}</button>}

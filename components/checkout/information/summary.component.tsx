@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '@/styles/components/checkout/information/summary.module.scss'
 
-const Summary = () => {
+const Summary:React.FC<{summary:number}> = ({summary}) => {
   return (
     <div className={styles.summary}>
       <div className={styles.id}>
@@ -14,7 +14,7 @@ const Summary = () => {
       </div>
       <h3 className="p4">
         <span>Subtotal</span>
-        <span>$12.00</span>
+        <span>${summary}</span>
       </h3>
       <h3 className="p4">
         <span>Shipping</span>
@@ -22,7 +22,7 @@ const Summary = () => {
       </h3>
       <h3 className="p4">
         <span>Total</span>
-        <span>$12</span>
+        <span>${summary}</span>
       </h3>
     </div>
   )

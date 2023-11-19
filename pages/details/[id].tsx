@@ -1,11 +1,14 @@
 import React, { useEffect,useState } from 'react'
-import products from '@/public/db/products.json'
 import { GlobalComponents } from '@/components/global'
 import { DetailsComponents } from '@/components/details'
 import styles from '@/styles/pages/details.module.scss'
 import { HomeComponents } from '@/components/home'
+import productsdb from '@/public/db/products.json'
 
-const Details:React.FC<any> = ({params}) => {
+const Details:React.FC<any> = (props) => {
+
+  const {params, products, cart, shopActions } = props
+
   const [product,setProduct] = useState<any>({})
 
 
@@ -20,25 +23,30 @@ const Details:React.FC<any> = ({params}) => {
 
   useEffect(()=>{
     handleProduct()
-  },[params])
+  },[params,products])
 
   return (
       <GlobalComponents.LayoutWithFooter className={styles.details} title='Details' meta={[]}>
         <div className={styles.hero}>
           <DetailsComponents.Global.Gallery product={product} />
           <div className={styles.hero_column}>
-            <DetailsComponents.Global.DetailsController product={product} /> 
+            <DetailsComponents.Global.DetailsController 
+              product={product} 
+              products={products}
+              cart={cart}
+              shopActions={shopActions}
+            /> 
             <DetailsComponents.Global.Description product={product} /> 
             <DetailsComponents.Global.DetailsFooter /> 
           </div>
         </div>
-        {model_000_regex.test(product.name) && category_regex.test(product.category) && 
+        {model_000_regex.test(product?.name) && category_regex.test(product?.category) && 
           <React.Fragment>
            <DetailsComponents.Model_000.FeatureGallery />
            <HomeComponents.Logos title='“These are the most thoughtfully designed sneakers on the market.”' />
            <DetailsComponents.Global.SecondGallery />
           </React.Fragment>}
-        {model_001_regex.test(product.name) && category_regex.test(product.category) && 
+        {model_001_regex.test(product?.name) && category_regex.test(product?.category) && 
           <React.Fragment>
             <DetailsComponents.Model_001.Introduce />
             <DetailsComponents.Model_001.Video />
@@ -60,7 +68,7 @@ export default Details
 
 export async function getStaticPaths() {
   try {
-    const paths = products.map((p: any) => ({
+    const paths = productsdb.map((p: any) => ({
       params: {
         id: p.id.toString(),
       },

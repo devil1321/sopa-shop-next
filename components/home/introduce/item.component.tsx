@@ -9,18 +9,18 @@ const Item:React.FC<any> = ({title,product,isRight}) => {
       <div className={`${styles.column}`} style={isRight ? {order:2}:{}}>
         <div className={styles.img}>
                 <Link href="/details/[id]" as={`/details/1`}>
-                  <img src={product.details_images[1]} alt="image-1" />
+                  <img src={product?.details_images[1]} alt="image-1" />
                 </Link>
         </div>
         <div className={styles.img}>
                 <Link href="/details/[id]" as={`/details/1`}>
-                  <img src={product.details_images[2]} alt="image-2" />
+                  <img src={product?.details_images[2]} alt="image-2" />
                 </Link>
         </div>
       </div>
       <div className={styles.main_image}>
               <Link href="/details/[id]" as={`/details/1`}>
-                <img src={product.details_images[0]} alt="image-main" />
+                <img src={product?.details_images[0]} alt="image-main" />
               </Link>
       </div>
     </div>

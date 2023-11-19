@@ -7,7 +7,7 @@ const Model_000:React.FC<any> = ({product}) => {
     <div className={styles.model}>
      <h3 className="h8">Explore Model 000</h3>
      <div className={styles.place}>
-      {product.images.map((image:string) => <Product key={image} product={product} image={image}  />)}
+      {product?.images.map((image:string) => <Product key={image} product={product} image={image}  />)}
      </div>
      <button>Shop Now</button>
     </div>

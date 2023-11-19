@@ -77,7 +77,15 @@
         width: 30px;
     }
 }
-
+.color{
+    @include flex(row,flex-start,center,null);
+    div{
+        margin-left: 5px;
+        border: 1px solid $grey-500;
+        height: 10px;
+        width: 20px;
+    }
+}
 .summary{
     width: 95%;
     position: absolute;

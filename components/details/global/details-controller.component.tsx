@@ -6,11 +6,14 @@ import Link from 'next/link';
 
 interface DetailsControllerProps{
     product:any;
+    products:any;
+    cart:any;
+    shopActions:any;
 }
 
-const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
+const DetailsController:React.FC<DetailsControllerProps> = ({product,products,cart,shopActions}) => {
 
-  const [activeColor,setActiveColor] = useState<string>('')
+  const [activeColor,setActiveColor] = useState<any>({})
   const [isMenu,setIsMenu] = useState<boolean>(false)
   const [size,setSize] = useState<string>(()=>{
     if(product?.sizes){
@@ -39,26 +42,26 @@ const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
         setSize(product.sizes[0])
     }
     if(product?.colors){
-      setActiveColor(product.colors[0].name)
+      setActiveColor(product.colors[0])
     }
   },[product])
 
   return (
     <div className={styles.controller}>
-      <h2 className='p1'>{product.name}</h2>
+      <h2 className='p1'>{product?.name}</h2>
       <div className={styles.stars}>
         {handleRating(product).map((rating:string) => <img key={rating} src="/assets/icons/star.png" alt="star" />)}
-        <span className='p5'>{product.rating} <span>&#40;{product.rating_count}&#41;</span> </span>
+        <span className='p5'>{product?.rating} <span>&#40;{product?.rating_count}&#41;</span> </span>
       </div>
       <div className={styles.colors}>
-        <h3 className='p5'>Color: {activeColor}</h3>
+        <h3 className='p5'>Color: {activeColor.name}</h3>
         {product?.colors?.map((c:any,index:number)=>
             <div 
                 key={c.color} 
                 className={`${styles.color} ${index === 0 && 'details__controller-color-active'} details__controller-color`}
                 onClick={(e)=>{
                     handleActiveColor(e)
-                    setActiveColor(c.name)
+                    setActiveColor(c)
                 }}
             >
             <div style={{backgroundColor:c.color}}></div></div>)}
@@ -90,7 +93,7 @@ const DetailsController:React.FC<DetailsControllerProps> = ({product}) => {
             </div>}
       </div>
       {!product?.inCart 
-        ? <button className={styles.button}>Add To Bag {product?.price}$</button>
+        ? <button onClick={()=>shopActions.handleAddProduct(product.id,cart,products,activeColor.color,size)} className={styles.button}>Add To Bag {product?.price}$</button>
         : <Link href="/gift-card">
             <button className={`${styles.button} details__button-in-cart`}>In Cart</button>
           </Link>}

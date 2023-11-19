@@ -1,6 +1,7 @@
 [
     {
         "id":1,
+        "inCart":false,
         "name":"Model 000",
         "category":"model",
         "colors":[
@@ -37,6 +38,7 @@
     },
     {
         "id":2,
+        "inCart":false,
         "name":"Model 001",
         "category":"model",
         "colors":[
@@ -61,6 +63,7 @@
     },
     {
         "id":3,
+        "inCart":false,
         "name":"Sopa Stretach Laces",
         "category":"accessories",
         "colors":[
@@ -109,6 +112,7 @@
     },
     {
         "id":4,
+        "inCart":false,
         "name":"Sopa Everyday Mask",
         "category":"accessories",
         "colors":[
@@ -157,6 +161,7 @@
     },
     {
         "id":5,
+        "inCart":false,
         "name":"Model 000",
         "category":"socks",
         "colors":[
@@ -193,6 +198,7 @@
     },
     {
         "id":6,
+        "inCart":false,
         "name":"Sopa Everyday Crew Socks",
         "category":"socks",
         "colors":[
